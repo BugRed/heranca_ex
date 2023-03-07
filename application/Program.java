@@ -8,12 +8,12 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		Account acc = new Account(404, "Yahto", 0.0);
-		BusinessAccount bacc = new BusinessAccount(001, "Catarinas Lanches", 0.0, 500.00);
+		//Account acc = new Account(404, "Yahto", 0.0);
+		//BusinessAccount bacc = new BusinessAccount(001, "Catarinas Lanches", 0.0, 500.00);
 		
 		//UPCASTING = um objeto de subclass pode ser atribuido a uma variavel de superclass
 		
-		Account acc1 = bacc;
+		//Account acc1 = bacc;
 		Account acc2 = new BusinessAccount(222, "Empresas mil", 0.0, 5000.00);
 		Account acc3 = new SavingAccount(171, "Coquinho suado", 0.0, 0.01);
 		
@@ -21,7 +21,7 @@ public class Program {
 		
 		BusinessAccount acc4 = (BusinessAccount) acc2;
 		acc4.loan(100.0);
-		BusinessAccount acc8 = (BusinessAccount)acc1;
+		//BusinessAccount acc8 = (BusinessAccount)acc1;
 		// nunca fazer um casting entre subclass
 		// BusinessAccount acc5 = (BusinessAccount) acc3;
 		
